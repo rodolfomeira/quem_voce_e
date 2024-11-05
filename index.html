@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<title>Bootstrap</title>
+</head>
+<body>
+	<!-- usando o container fluid -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-4">
+				<div id="controle" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#controle" data-slide-to="0"></li>
+						<li data-target="#controle" data-slide-to="1"></li>
+						<li data-target="#controle" data-slide-to="2"></li>		 
+                        <li data-target="#controle" data-slide-to="3"></li>
+						<li data-target="#controle" data-slide-to="4"></li>							
+					</ol>
+					<div class="carousel-inner">
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imagem/aleffy.jpg" alt="">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Aleffy</h3>
+								<p>Good Boy</p>
+							</div>
+						</div>
+						<div class="carousel-item active">
+							<img class="d-block w-100" src="imagem/giovanna.jpg" alt="">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Giovanna</h3>
+								<p> A menina de Pink</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imagem/kauan.jpg" alt="">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>kauan</h3>
+								<p>O menino da Selfie</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imagem/lucas.jpg" alt="">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Lucas</h3>
+							 
+								<p> Garoto do Sorriso</p>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img class="d-block w-100" src="imagem/neusa.jpg" alt="">
+							<div class="carousel-caption d-none d-md-block">
+								<h3>Neusa</h3>
+								 
+								<p> A menina fitness</p>
+							</div>
+						</div>
+					</div>
+					<a href="#controle" class="carousel-control-prev" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+					<a href="#controle" class="carousel-control-next" role="button" data-slide="next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+				</div>
+			</div>
+			<div class="col-4">
+			
+			 <h3 align="center"> Que famoso vocês seriam ?</h3><hr />
+			
+						
+						<ol>
+						    <li>Aleffy </li>
+							<li>Giovanna      </li>
+							<li>kauan      </li>
+							<li>Lucas    </li>
+							<li>Neusa    </li>
+							
+						</ol>
+						
+					<form class="form-inline" action="" name="formFamoso">
+						<input class="from-control" type="number" placeholder="número da pessoa" name="op">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+ 
+						         <input type="button" class="btn btn-outline-dark" name="verifica" value="Ver o Resultado" onclick="respostas()"> 
+					</form>
+					
+			</div>
+				<div class="col-4">
+				 <div class="jumbotron">
+					<h3>Famosos</h3>
+					<p class="lead"> Se você fosse famoso , quem você seria ?</p>
+					<hr class="my-4">
+					<img src ="famosos/marilyn_moroe.jpg" alt="Marilyn Moroe" width="100" title="Marilyn Moroe" />
+					<hr class="my-4">
+					<p class="lead">
+						<a href="https://www.ofuxico.com.br/" class="btn btn-dark btn-lg" role="button">Famosos</a>
+					</p>
+				 </div>
+			  </div>	
+			  <div class="container-fluid">
+			</div>
+	</div>
+		<div class="row">
+			<div class="col-12">
+					 
+					<script>
+					function respostas()
+					{ 
+					var resp=document.formFamoso.op.value;
+					 
+					var num2 = Math.floor(Math.random() * 6)//sorteia 6 números ( de 0 até 5)
+					 
+					  
+					 
+					 if(resp==1) { nome="Aleffy"}
+					 else if(resp==2) { nome="Giovanna"}
+					 else if(resp==3) { nome="kauan "}
+					 else if(resp==4) { nome="Lucas"}
+					 else if(resp==5) { nome="Neusa"}
+					 else alert ("Opção inválida!!!") 
+					 
+					 
+				 
+					 
+					 document.write("<center> <h1>Quem você seria se fosse famoso(a)</h1><hr />" )
+					 
+					 if(num2==0) {
+					 //alert(num2)
+					 alert(nome+"  sua versão famosa é a Araci de Almeida")
+					 document.write("<img src='famosos/araci.jpg' title='Araci de Almeida' width='500'>")
+					 } 
+					 else if(num2==1) {
+					 //alert(num2)
+					 alert(nome+"   sua versão famosa é o Elton John")
+					 document.write("<img src='famosos/elton_john.jpg' title='Elton John'width='500'>")
+					 }
+					 else if(num2==2){
+					 //alert(num2)
+					 alert(nome+"   sua versão famosa é a Madona")
+					 document.write("<img src='famosos/madona.jpg' title='Madona'width='500'>")
+					 }
+					 else if(num2==3) { 
+					 //alert(num2)
+					 alert(nome+" sua versão famosa é o Pedro de Lara")
+					 document.write("<img src='famosos/pedro_de_lara.png' title='Pedro de Lara'width='500'>")
+					 }
+					 else if(num2==4) {
+					 //alert(num2)
+					 alert(nome+"  sua versão famosa é o  Pelé")
+					 document.write("<img src='famosos/pele.jpg' title='Pelé'width='400'>")
+					 }
+					 else if(num2==5) { 
+					 //alert(num2)
+					 alert(nome+"  sua versão famosa é a Shaquira")
+                     document.write("<img src='famosos/shaquira.jpg' title='Shaquira'width='500'>")	
+					 }  
+					    document.write("<br /><a href=''> Voltar</a> ")
+						
+			            document.write("</center>");
+
+
+						
+					 }
+				 
+					
+					</script>
+					
+				  
+					  
+			 
+				</div>
+	</div>	 
+		 
+						
+	 
+		
+	<!-- jQuery, Popper.js, Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		$('.carousel').carousel({
+			interval: 1000
+		})
+	</script>
+</body>
+</html>
+
